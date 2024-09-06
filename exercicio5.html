@@ -8,7 +8,22 @@
 <body>
     <script>
 
+        var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12, 13, 14, 15, 16, 17, 18, 19, 20];
+        var par = []
+        var impar = []
+       
+        for (posicao in numeros) {
+            if (numeros[posicao] % 2 == 0 ) {
+                par.push(numeros[posicao])
+            }
+            else {
+                impar.push(numeros[posicao])
+            }
+        }
 
+        alert("Os 20 números inteiros são: " + numeros)
+        alert("Números pares: " + par)
+        alert("Números ímpares: " + impar)
         
     </script>
 </body>

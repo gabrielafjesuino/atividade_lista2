@@ -8,8 +8,19 @@
 <body>
     <script>
 
-
+        var numeros = [1, 2, 3, 4, 5]
+        var soma = 0
+        var multiplicacao = 1
         
+        for (posicao in numeros) {
+            soma = soma + (numeros[posicao])
+            multiplicacao = multiplicacao * (numeros[posicao])
+        }
+
+        alert("Números: " + numeros)
+        alert("Soma: " + soma)
+        alert("Multiplicação: " + multiplicacao)
+
     </script>
 </body>
 </html>

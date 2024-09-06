@@ -8,8 +8,44 @@
 <body>
     <script>
 
+        var aluno1 = [1, 2, 3, 4]
+        var aluno2 = [5, 6, 7, 8]
+        var aluno3 = [9, 10, 9, 10]
 
-        
+        var media = []
+
+        var soma = 0
+
+        for (posicao in aluno1) {
+            soma = soma + (aluno1[posicao])
+        }
+
+        media.push(soma / 4)
+        soma = 0
+
+        for (posicao in aluno2) {
+            soma = soma + (aluno2[posicao])
+        }
+
+        media.push(soma / 4)
+        soma = 0
+
+        for (posicao in aluno3) {
+            soma = soma + (aluno3[posicao])
+        }
+
+        media.push(soma / 4)
+
+        var alunosMaiorque7 = 0
+
+        for (posicao in media) {
+            if (media[posicao] >= 7) {
+                alunosMaiorque7 = alunosMaiorque7 + 1
+            }
+        }
+
+        alert("O número de alunos com média maior ou igual a 7 é: " + alunosMaiorque7)
+
     </script>
 </body>
 </html>
