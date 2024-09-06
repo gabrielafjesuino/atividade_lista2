@@ -8,8 +8,21 @@
 <body>
     <script>
 
+        var caracteres = [0, 'a', '!', 1, 'b', '@', 2, 'c', '#', 3]
+        var consoantes = []
 
-        
+        for (posicao in caracteres) {
+            if (caracteres[posicao] === "b" || caracteres[posicao] === "c" || caracteres[posicao] === "d" || caracteres[posicao] === "f" ||
+            caracteres[posicao] === "g" || caracteres[posicao] === "h" || caracteres[posicao] === "j" || caracteres[posicao] === "k" || caracteres[posicao] === "l" ||
+            caracteres[posicao] === "m" || caracteres[posicao] === "n" || caracteres[posicao] === "p" || caracteres[posicao] === "q" || caracteres[posicao] === "r" ||
+            caracteres[posicao] === "s" || caracteres[posicao] === "t" || caracteres[posicao] === "v" || caracteres[posicao] === "w" || caracteres[posicao] === "x" ||
+            caracteres[posicao] === "y" || caracteres[posicao] === "z") {
+                consoantes.push(caracteres[posicao])
+            }
+        }
+
+        alert(consoantes)
+
     </script>
 </body>
 </html>
